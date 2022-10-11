@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="O`gpI#~~Q-Al3:VV!,3M" x="0" y="0"><statement name="HANDLER"><block type="device_show_number" id="Z?0^%E(vB4x/mHU5B,:A"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="minode_dht_get_humidity" id="3f[tf({CCA;.CmGmFr0b"><field name="connName">ConnName.A1</field></block></value><next><block type="controls_if" id="2.um9Ab@w^Gnb/~a=Jpf"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="mz3CmMEX:McH+*L3X[]P"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="minode_dht_get_humidity" id="J-N07rQ^cRy,ge3kS8X="><field name="connName">ConnName.A1</field></block></value><value name="B"><shadow type="math_number" id="bgZ,@5n%byPvHEKRUoT]"><field name="NUM">60</field></shadow></value></block></value><statement name="DO0"><block type="minode_motor_control1" id="Mx{;S9kNy3ImUy8m9J!v"><field name="connName">AnalogConnName.Analog_A2</field><value name="speed"><shadow type="math_number" id="[E#d#h8b0nUo|4O|Y;Ps"><field name="NUM">90</field></shadow></value></block></statement><statement name="ELSE"><block type="minode_motor_control1" id="44*Ye)yFMoujyW1n/MZK"><field name="connName">AnalogConnName.Analog_A2</field><value name="speed"><shadow type="math_number" id="^,@|d`p%V-sBSJ6f!WLz"><field name="NUM">0</field></shadow></value></block></statement></block></next></block></statement></block><block type="device_button_event" id="/#N/`|RkNrysb/i[`@?(" x="-18" y="371"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="A#{[aUGmFu1ph3!zbtM+"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        . # . # .
+        `</field><next><block type="minode_rgb_choose_color" id="gAkr,JoXQ`hVI,K6,%5F"><field name="connName">ConnName.A0</field><field name="color">MiNodeColor.MiNode_RGB_COLOR_CYAN</field></block></next></block></statement></block><block type="device_button_event" id="ygxX_ccbw+oK$Q4v?YTa" x="263" y="366"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_show_leds" id="TZa6{f;)$i9T)~zOx@_M"><field name="LEDS">`
+        . # . . . 
+        . # . # . 
+        . # # . . 
+        . # . # . 
+        . # # . .
+        `</field><next><block type="minode_rgb_choose_color" id="v?+$c{)t.aVF7,7qtTG("><field name="connName">ConnName.A0</field><field name="color">MiNodeColor.MiNode_RGB_COLOR_YELLOW</field></block></next></block></statement></block></xml>
